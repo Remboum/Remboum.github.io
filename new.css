@@ -1,0 +1,612 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('images/light blue.jpg') no-repeat center center/cover; /* Image de fond par défaut */
+    background-size: cover; /* Permet à l'image de couvrir toute la page */
+}
+
+
+
+
+
+.intro-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 40px 60px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    max-width: 600px; /* Limit width for centering */
+    text-align: center;
+    margin-top: 20px;
+    position: relative; /* Allows us to adjust its placement */
+    left: 31.5%; /* Pushes the bubble 20% to the right */
+    transform: translateX(-10%); /* Fine-tune adjustment */
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(104, 195, 255, 1); /* Button color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(80, 180, 240, 1); /* Slightly darker on hover */
+}
+
+
+
+
+
+header {
+    background: url('images/light blue.jpg') no-repeat center center/cover; /* Garde l'image comme fond pour l'en-tête */
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
+}
+
+.profile-picture {
+    position: absolute; /* Permet de positionner l'image où tu le souhaites */
+    top: 15px;         /* Ajuste la position verticalement */
+    left: 20px;        /* Ajuste la position horizontalement */
+    border-radius: 50%; /* Rend l'image ronde */
+    overflow: hidden;  /* Cache tout débordement d'image */
+}
+
+.profile-picture img {
+    width: 160px; /* Ajuste la taille de l'image */
+    height: 160px; /* Assure que l'image est carrée pour être parfaitement ronde */
+    object-fit: cover; /* Centrer l'image et ajuster sans déformation */
+    border-radius: 50%; /* Rend l'image ronde */
+    border: 3px solid white; /* Bordure blanche pour un effet visuel */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond noir transparent pour la barre de navigation */
+}
+
+nav ul li {
+    margin: 0 50px; /* Augmente l'espace entre les éléments de la liste */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.section {
+    height: 100vh; /* Fait en sorte que chaque section occupe toute la hauteur de la fenêtre */
+    padding: 50px 20px; /* Ajoute un espacement autour des sections */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    display: flex; /* Utilise Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Arrière-plans pour chaque section */
+
+
+/* Section About Me */
+.about-bg {
+    background: url('images/light blue backwards.jpg') no-repeat center center/cover; /* Changez le chemin de l'image */
+    background-size: cover; /* Permet à l'image de couvrir toute la section */
+    height: 100vh;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Divise en deux colonnes : 1 pour la photo, 2 pour le texte */
+    gap: 40px;
+    background: rgba(0, 0, 0, 0.6); /* Fond transparent pour un contraste avec l'arrière-plan */
+    padding: 120px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajoute un effet d'ombre */
+}
+
+.about-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 500px; /* Limite la taille de la photo */
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.about-photo img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+}
+
+.about-text {
+    text-align: left;
+    font-size: 18px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text .highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-item:hover {
+    background-color: rgba(104, 195, 255, 0.8); /* Change la couleur au survol */
+}
+
+
+
+/* Ajoutez cette règle pour agrandir les images */
+.highlight-item img {
+    width: 215px; /* Ajustez la taille selon vos besoins, ex : 50px */
+    height: 215px; /* Assurez-vous que la hauteur soit égale pour garder la proportion */
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+
+
+
+
+
+
+
+
+.skills-bg {
+    background: url('images/light blue.jpg') no-repeat center center/cover; /* Changez le chemin de l'image */
+    background-size: cover; /* Permet à l'image de couvrir toute la section */
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns for balance */
+    gap: 20px;
+    text-align: left;
+    padding: 40px;
+}
+
+.skills-bg h2 {
+    font-size: 32px;
+    color: #ffffff; /* Accent color */
+    margin-bottom: 500px;
+    
+    top: 200px; /* Distance from the top */
+    left: 60px; /* Distance from the left */
+}
+
+.skills-category h3 {
+    font-size: 20px;
+    color: #a1f0f6; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-category ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 0.3); /* Light background */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.projects-bg {
+    background: url('images/light blue backwards.jpg') no-repeat center center/cover; /* Same background as before */
+    background-size: cover;
+    padding: 60px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-container {
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 4rem; /* Ajuste le padding avec rem */
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ombre */
+    max-width: 50%; /* Adapte la largeur à 100% de l'écran */
+    width: 80%; /* Largeur responsive */
+    margin: 0 auto; /* Centre le conteneur */
+}
+
+.projects-container h2 {
+    font-size: 2.5rem; /* Utilise rem pour la taille du texte */
+    color: white;
+    margin-bottom: 2rem; /* Ajuste l'espacement sous le titre */
+}
+
+.projects-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 4rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 63%;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.projects-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.projects-container p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.project-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.project-item:hover {
+    background-color: rgba(104, 195, 255, 0.8);
+}
+
+.experience-bg {
+    background: url('images/light blue backwards.jpg') ; /* Same background as before */
+    background-size: cover;
+    padding: 250px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.experience-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 90%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.experience-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.experience-container p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.experience-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.experience-item:hover {
+    background-color: rgba(104, 195, 255, 0.8);
+}
+
+
+.education-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 75%;
+    width: 69%;
+    margin: 0 auto;
+}
+
+.education-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.education-container p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.education-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.education-item:hover {
+    background-color: rgba(104, 195, 255, 0.8); /* Color change on hover */
+}
+
+.education-bg {
+    background: url('images/light blue.jpg') ; /* Same background as before */
+    background-size: cover;
+    padding: 250px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left; /* Align text to the left */
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center icons and text vertically */
+    margin-bottom: 1.5rem; /* Space between contact items */
+}
+
+.contact-icon {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Keep icons consistent */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-item a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: rgba(104, 195, 255, 1); /* Color change on hover */
+}
+
+.contact-bg {
+    background: url('images/light blue.jpg') ; /* Same background as before */
+    background-size: cover;
+    padding: 250px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skills-bg {
+    background: url('images/light blue.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh; /* Pour que chaque section occupe toute la hauteur de la fenêtre */
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes pour équilibrer */
+    gap: 20px;
+    text-align: left;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.6); /* Fond transparent pour un contraste avec l'arrière-plan */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajoute un effet d'ombre */
+    max-width: 900px; /* Limite la largeur pour garder le contenu centré */
+    width: 90%; /* Pour rendre le contenu responsive */
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    font-size: 20px;
+    color: #a1f0f6; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-category ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 0.3); /* Fond légèrement coloré */
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.skills-category ul li:hover {
+    background-color: rgba(104, 195, 255, 0.8); /* Change la couleur au survol */
+}
+
+
+
+
+
+/* Civic Engagement Section */
+.CivicEngagement-bg {
+    background: url('images/light blue backwards.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CivicEngagement-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 80%;
+    text-align: left;
+}
+
+/* Mobility Section */
+.Mobility-bg {
+    background: url('images/light blue.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mobility-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 80%;
+    text-align: left;
+}
+
+/* Career Management Section */
+.CareerManagement-bg {
+    background: url('images/light blue backwards.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CareerManagement-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 80%;
+    text-align: left;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #0056b3;
+}

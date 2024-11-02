@@ -1,66 +1,282 @@
 <!DOCTYPE html>
-<html>
-    <HEAD>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
-        <title>Croustishop - Restaurant
-
-        </title>
-        <meta charset ="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </HEAD>
-
-    <body>
-        <!-- balise en haut de page -->
-        <header>
-            <div class="title-box">
-                <h1>Croustishop</h1>
-                <p>
-                    On va bien khalass les reufs
-                           
-                </p>
-            </div>
-
-                <!-- slider d'images -->
-            <div class="slider">
-                <div class="slides">
-                        <div class="slide"><img src="image/1.jpg"></div>
-                        <div class="slide"><img src="image/2.jpg"></div>
-                        <div class="slide"><img src="image/3.jpg"></div>
-                        <div class="slide"><img src="image/4.jpg"></div>
-                        
-                
-                </div>
-            </div>
-
-            
-        </header>
-        
-        
-
-        <!-- menu de navigation -->
-         <nav>
-
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon E-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <div class="profile-picture">
+            <img src="images/linkedin photo.jpg" alt="Ma Photo" />
+        </div>
+        <nav>
             <ul>
-                <li> Pizza degueulasse de celian emoji BEURK
-
-
-                </li>
-                <li>
-                    Tacos mon gars
-                </li>
-                <li>
-                    Alexandre va bien graille
-                </li>
-                <li>
-                    Bon petit kebab
-                </li>
-
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#CivicEngagement">Civic Engagement</a></li>
+                <li><a href="#Mobility">Mobility</a></li>
+                <li><a href="#CareerManagement">Career Management</a></li>
+                <li><a href="#contact">Contact</a></li>
 
             </ul>
-         </nav>
+        </nav>
+        <div class="intro-container">
+            <h1>Welcome, I'm Ilias Ajerame</h1>
+            <p>Passionate Student, Entrepreneur, Athlete, and Big Data Advocate</p>
+            <a href="#contact" class="btn">Contact me</a>
+        </div>
+    </header>
+    
+    
+    <!-- Nouvelle section About Me -->
+    <section id="about" class="section about-bg">
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="images/linkedin photo.jpg" alt="Your Photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello, I'm Ilias Ajerame !
+                    <p>
+                        I'm a 20 years old engineering student at N7 (ENSEEIHT) specializing in Computer Science. I'm interested at Web Development, Artificial Intelligence and Machine Learning.
+
+                    </p>
+                    
+                     I combine my academic knowledge with hands-on projects, I also have a Youtube channel where I share my passion.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <img src="images/entrepreneur.jpg" alt="Icon">
+                        
+                    </div>
+                    <div class="highlight-item">
+                        <img src="images/sport.jpg" alt="Icon">
+                        
+                    </div>
+                    <div class="highlight-item">
+                        <img src="images/big data.jpg" alt="Icon">
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-bg">
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Arabic (Native)</li>
+                    <li>French (Bilingual)</li>
+                    <li>English (Professional)</li>
+                    <li>Japanese (School Level)</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Programming & Tools</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>LaTeX</li>
+                    <li>Filmora</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Adaptability</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Machine Learning & AI</li>
+                    <li>Data Analysis</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
-    </body>
+<!-- Projects Section -->
+<section id="projects" class="section projects-bg">
+    <div class="projects-container">
+        <h2>My Projects</h2>
+        
+        
+        <div class="project-item">
+            <h3>Football Match Prediction Study</h3>
+            <p>
+                I achieved a 73 % accuracy rate for binary predictions and 56 % for multinomial predictions
+            </p>
+        </div>
+        <div class="project-item">
+            <h3>Cooperative Application</h3>
+            <p>
+                I am developping an application of cooperation between students
+            </p>
+        </div>
+        <div class="project-item">
+            <h3>Marathon</h3>
+            <p>
+                I am planning to run a Marathon in 2026
+            </p>
+        </div>
+        
+    </div>
+</section> 
+
+<!-- Experience Section -->
+
+<!--
+<section id="experience" class="section experience-bg">
+    <div class="experience-container">
+        <h2>My Experience</h2>
+        
+        
+        <div class="experience-item">
+            <h3>Global Study Cooperation App</h3>
+            <p>
+                I am currently developing an application that will unite students and learners worldwide to study collaboratively. This app aims to make learning more accessible and encourage cooperation across the globe.
+            </p>
+        </div>
+
+        
+        <div class="experience-item">
+            <h3>Marathon Preparation</h3>
+            <p>
+                In the next two years, I plan to run a marathon. It will be a challenge that combines my passion for sports with my goal of self-improvement.
+            </p>
+        </div>
+
+        
+        <div class="experience-item">
+            <h3>Social Media for App Promotion</h3>
+            <p>
+                To promote my future app, I am also planning to leverage social media. With my skills in entrepreneurship and visibility, developed through managing my YouTube channel, I aim to create a successful marketing strategy.
+            </p>
+        </div>
+    </div>
+</section>
+-->
+
+    <!-- Education Section -->
+
+<section id="education" class="section education-bg">
+    <div class="education-container">
+        <h2>My Education</h2>
+        
+        
+        <div class="education-item">
+            <h3>Education Journey</h3>
+            <p>
+                2024-2027: Toulouse INP N7 (ENSEEIHT) | Engineering Degree specialized in Computer Science
+            </p>
+            <p>
+                2022-2024 : CPGE MPSI / MP* | Preparatory Class to Engineering school specialized in Mathematics.
+            </p>
+            <p>
+                2018-2021 : High School Diploma | Specialized in Mathematics and Engineering in Morocco
+            </p>
+        </div>
+
+        
+        <div class="education-item">
+            <h3>Moroccan National Olympic Math Competition</h3>
+            <p>
+                I participated in the national Moroccan Olympic math competition, where I achieved 9th place. Additionally, I completed a 7-stage learning formation under the mentorship of brilliant teachers from across the nation. Their guidance enabled me to assist other talented students in mathematics competitions.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    
+    <section id="CivicEngagement" class="section CivicEngagement-bg">
+        <div class="CivicEngagement-container">
+            <h2>Civic Engagement</h2>
+            <p> (Coming soon) </p>
+        </div>
+    </section>
+
+    <!-- Mobility Section -->
+    <section id="Mobility" class="section Mobility-bg">
+        <div class="Mobility-container">
+            <h2>Mobility</h2>
+            <p> I lived in Morocco until the age of 18 before moving to France to continue my studies. This experience has allowed me to witness the diversity of cultures firsthand, enriching my perspective and personal growth.
+
+            </p>
+        </div>
+    </section>
+
+   <!-- Career Management Section -->
+<!-- Career Management Section -->
+<section id="CareerManagement" class="section CareerManagement-bg">
+    <div class="CareerManagement-container">
+        <h2>Career Management</h2>
+        <p>Learn about my career</p>
+        <h2>Elevator Pitch:</h2>
+
+        <!-- Intégration de la vidéo locale -->
+        <video width="560" height="315" controls>
+            <source src="videos/20241102-130150-4qx4crnv_enM04BN4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Contacts Section -->
+<section id="contact" class="section contact-bg">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        
+        <!-- Email Section -->
+        <div class="contact-item">
+            <img src="images/logo mail.png" alt="Email Icon" class="contact-icon">
+            <a href="mailto:ajerame.ilias.04@gmail.com">ajerame.ilias.04@gmail.com</a>
+        </div>
+        
+        <!-- Facebook Section -->
+        <div class="contact-item">
+            <img src="images/facebook.png" alt="Facebook Icon" class="contact-icon">
+            <a href="https://www.facebook.com/Anime.Remboum" target="_blank">Facebook</a>
+        </div>
+        
+        <!-- Instagram Section -->
+        <div class="contact-item">
+            <img src="images/logo instagram.avif" alt="Instagram Icon" class="contact-icon">
+            <a href="https://www.instagram.com/Remboum" target="_blank">Instagram</a>
+        </div>
+        
+        <!-- LinkedIn Section -->
+        <div class="contact-item">
+            <img src="images/logo linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+            <a href="https://www.linkedin.com/in/ilias-ajerame-566b75274/" target="_blank">LinkedIn</a>
+        </div>
+
+        <!-- PDF Resume Button -->
+        <div class="contact-item">
+            <a href="files/Ilias_Ajerame_CV.pdf" class="resume-btn" target="_blank">My Résumé</a>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
 </html>
