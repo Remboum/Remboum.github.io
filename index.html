@@ -212,8 +212,11 @@
     <section id="Mobility" class="section Mobility-bg">
         <div class="Mobility-container">
             <h2>Mobility</h2>
-            <p> I lived in Morocco until the age of 18 before moving to France to continue my studies. This experience has allowed me to witness the diversity of cultures firsthand, enriching my perspective and personal growth.
-
+            <p> I lived in Morocco until the age of 18 before moving to France to continue my studies.
+                
+            </p>
+            <p>
+                This experience has allowed me to witness the diversity of cultures firsthand, enriching my perspective and personal growth.
             </p>
         </div>
     </section>
@@ -248,7 +251,7 @@
         <!-- Email Section -->
         <div class="contact-item">
             <img src="images/logo mail.png" alt="Email Icon" class="contact-icon">
-            <a href="mailto:ajerame.ilias.04@gmail.com">ajerame.ilias.04@gmail.com</a>
+            <a href="mailto:ajerame.ilias.04@gmail.com" onclick="copyToClipboard(event, 'ajerame.ilias.04@gmail.com')">ajerame.ilias.04@gmail.com</a>
         </div>
         
         <!-- Facebook Section -->
@@ -271,12 +274,23 @@
 
         <!-- PDF Resume Button -->
         <div class="contact-item">
-            <a href="files/Ilias_Ajerame_CV.pdf" class="resume-btn" target="_blank">My Résumé</a>
+            <a href="files/Ilias Ajerame (1).pdf" class="resume1-btn" target="_blank">My Résumé (English)</a>
+        </div>
+        <div class="contact-item">
+            <a href="files/Ilias Ajerame (2).pdf" class="resume2-btn" target="_blank">My Résumé (French)</a>
         </div>
     </div>
 </section>
 
-
-
+<script>
+    function copyToClipboard(event, text) {
+        event.preventDefault(); // Empêche l'ouverture de l'application de messagerie
+        navigator.clipboard.writeText(text).then(function() {
+            alert("L'adresse email a été copiée dans le presse-papiers !");
+        }, function(err) {
+            console.error("Erreur lors de la copie dans le presse-papiers", err);
+        });
+    }
+    </script>
 </body>
 </html>
